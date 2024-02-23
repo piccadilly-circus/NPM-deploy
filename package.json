@@ -10,9 +10,10 @@
     "access": "public"
   },
   "dependencies": {
-    // Your dependencies here
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    // Your development dependencies here
+     "jest": "^27.4.0",
+    "eslint": "^8.10.0"
   }
 }
