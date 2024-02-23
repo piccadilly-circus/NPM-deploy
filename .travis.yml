@@ -4,5 +4,8 @@ deploy:
   api_token: 
      secure: "I257C6QL0aeE4RWK/Xiv/sPiXytLHTdtq9W2AXr6tXZNnAeyNnfqPVBfskxPPmkTlu2TwnXokvI331ayw4K/XBD8zB+vT2GuOfYL/8eF66RXXDFhPFRPDlCrm/B8uDBPQQQgbT+k/+sFmcB0RZCOfE5JRJyenzhIaYgmoYk2gb1XOXOImZr88kry1+LKpvAvhI6ln7XyLItTcgjakkPlhaAe6Sf24ZMI5H+XK39hKrw1PvwQoZbPsXBN0fb9otFeADRMaPUWK4rs5oIq0PeubE2KKWCWmI2ciu4okL9GRhHbUPzongg3T+XvBLO3nhAw+95n12K8SLcOdV6s5G6DkTicVVEvrVS1MRgWdyVDOlEp+voAHfgSYcP6Sf+e6XDX0E0XfZqiITh73Rv8C8jtLysnWlfUpM0O4XeuGQwqDRR/L/ADpdRQoyB/4Z9IoQa0FxlOhetww69EJBoDLQw5t75n+zV2ywBB1nbA+9VXY7LeNNwpDsNTVa7NyQNdeHm9rJUlluAjfpFQ8RrTlM60g3YIkNS8K65oZacTsmWMjk+JQ6J9wi51qoNGolZwPUp/uWAiKlRRYbB4wg6YTdh4wwLnxEdPBcBiqwin7B42uWMs2kfkWxqGLH1l0wURCrCAGnrKEREdQUW3rEsctgJ8alnKpW9ptDh3KKGgva4dXI8="
   edge: true
+  on:
+   branch:
+     - main
 script: 
   - python hello_world.py
