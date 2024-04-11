@@ -1,13 +1,15 @@
-language: python
+os: Linux
+dist: focal
+language: node_js
+node_js: 18.19.0
+install: skip
+script: sleep 1
 deploy:
   provider: npm
-  api_token: 
+  email: "arthana.h@celestialsys.com"
+  api_key: 
      secure: "lpdQFJSgP8GDDfiEofbq12v0SYp9uXEHRv2PNnvnbE/GSgneLKns8yFAB+WyIMmF3Z3gq6ZtnlRdKR0EOxY0CFOXWPWEWW1qBhS4AmhB+J6Ylkp3lXWy+U3i2YY5i/ComoRyRRf9XxrzQ6NLjLFHYIfKQeVgHII27+IsHkVFbwBmaU6piTT5rk826YxbzESt8VEsghoG31ml6jsk87p+9e+kNdmCz8U08CoDRPntcc/fh6rFin1NCbZzAVtiXK/wOH2igCzxj/nuU0Sp7uGNLQ72tufpZ36lnHdFElQHi5184ZoYHilXirL14rBV14sOQRbdHrz4/6pOe3HO/XWxEO5wC18byMJlfDoeSmHs0X+8rIId7xuvwhMuZcqyGn/2/iMVSe35fhyUEeQyA/JPTOSfPi0O+fBf2AnO0Eev+HhSPwj/fQbTm57Um0ZYEWxsu9x6gBMPES+3bzFDX6hd1YT0z2XBjWtmqj+y/jl50ox+JXlW4T5Fz8te82rMi02WGE5u/gQQSXOME/0tO+5/1nPu+mvNzebSLJpXKq06Tw92do7LInOas6qc9PcCkaDLGPg88vHp/T+ByK2XTAnC/knaRXIWG6QRCYPPbQN+8dxSpcoMsRh4KlBJBqQ2VIhW1Bpoh/dFVJU76H6j7rSJ5cXIjPcjve51fShaVeb9Zjg="
-  email: arthana.h@celestialsys.com
-  access: public
-  edge: true
+  skip_cleanup: true
   on:
-   branch:
-     - main
-script: 
-  - python hello_world.py
+   branch: npm-v10
+
