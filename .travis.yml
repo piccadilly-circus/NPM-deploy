@@ -1,7 +1,7 @@
 os: Linux
 dist: focal
 language: node_js
-node_js: 18
+node_js: 17
 install: skip
 script: sleep 1
 deploy:
